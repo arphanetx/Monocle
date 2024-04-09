@@ -42,7 +42,7 @@ Monocle can then be installed using the ```./setup.py``` script as below:
 
 **Optionally** If your machine supports it, you may want to install Nvidia Cuda of which will greatly increase the speed and optimisation of the used model. A [guide here](https://telin.ugent.be/telin-docs/windows/pytorch/) can be seen on how to setup Cuda.
 
-## Running
+## 🏃 Running
 
 To utilize Monocle, follow the instructions below:
 
@@ -52,8 +52,22 @@ Execute Monocle with the appropriate parameters to conduct binary search tasks.
 ```bash
 python3 monocle.py --binary <path-to-binary> --find <component-to-find>
 ```
+or
+```
+monocle --binary <path-to-binary> --find <component-to-find>
+```
 
-# Mistral-7B-Instruct-v0.2
+## Examples
+Below is an example of using Monocle on the ```pure-authd``` x86 binary found [here](https://github.com/polaco1782/linux-static-binaries/blob/master/x86-i686/pure-authd) to search for ```authentication code```.
+
+```
+python.exe /Monocle/monocle.py --binary "..\linux-static-binaries-master\linux-static-binaries-master\x86-i686\pure-authd" --find "authentication code"
+```
+
+
+
+
+# 🤖 Mistral-7B-Instruct-v0.2
 Behind the scenes Monocle uses the ```Mistral-7B-Instruct-v0.2``` model. The Mistral-7B-Instruct-v0.2 Large Language Model (LLM) is an instruct fine-tuned version of the Mistral-7B-v0.2. More can be found on the model [here!](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2).
 
 # 🙏 Contributions
