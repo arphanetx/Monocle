@@ -6,10 +6,10 @@
 
 <div align="center">
 
-![GitHub contributors](https://img.shields.io/github/contributors/yourusername/Monocle)
-![GitHub Repo stars](https://img.shields.io/github/stars/yourusername/Monocle?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/yourusername/Monocle?style=social)
-![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/Monocle)
+![GitHub contributors](https://img.shields.io/github/contributors/user1342/Monocle)
+![GitHub Repo stars](https://img.shields.io/github/stars/user1342/Monocle?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/user1342/Monocle?style=social)
+![GitHub last commit](https://img.shields.io/github/last-commit/user1342/Monocle)
 <br>
 
 </div>
