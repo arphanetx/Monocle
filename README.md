@@ -22,9 +22,12 @@ Monocle is a large language model designed specifically for binary analysis sear
 # ⚙️ Setup
 
 ## System Requirements
-Monocle uses the Mistral-7B-Instruct-v0.2 model, and where possible offloads processing to your systems GPU. It is reccomended to run Monocle on a machine with 32GB of RAM and a dedicated Nvidia GPU with atleast 4GB of memory. **However** it can run on lower spec machines, but will be significantly slower.
+**Monocle uses the Mistral-7B-Instruct-v0.2 model, and where possible offloads processing to your systems GPU. It is reccomended to run Monocle on a machine with a minimum of 16GB of RAM and a dedicated Nvidia GPU with atleast 4GB of memory. **However** it can run on lower spec machines, but will be significantly slower.
+
+**Monocle has been tested on Windows 11, however, should be compatable with Unix and other systems.**
 
 ## Dependencies
+Monocle requires **Nvidia Cuda** of which allows for greatly increased performance of the LLM. A [guide here](https://telin.ugent.be/telin-docs/windows/pytorch/) can be seen on how to setup Cuda.
 
 Monocle requires [Ghidra](https://ghidra-sre.org/) to be installed and accessible. Additionally, ensure that `analyzeHeadless` is available in your environment. 
 
@@ -40,9 +43,8 @@ Monocle can then be installed using the ```./setup.py``` script as below:
 ./setup.py install
 ```
 
-**Optionally** If your machine supports it, you may want to install Nvidia Cuda of which will greatly increase the speed and optimisation of the used model. A [guide here](https://telin.ugent.be/telin-docs/windows/pytorch/) can be seen on how to setup Cuda.
 
-## 🏃 Running
+## Running
 
 To utilize Monocle, follow the instructions below:
 
@@ -64,7 +66,10 @@ Below is an example of using Monocle on the ```pure-authd``` x86 binary found [h
 python.exe /Monocle/monocle.py --binary "..\linux-static-binaries-master\linux-static-binaries-master\x86-i686\pure-authd" --find "authentication code"
 ```
 
-
+<p align="center">
+    <img width=100% src="example.gif">
+  </a>
+</p>
 
 
 # 🤖 Mistral-7B-Instruct-v0.2
