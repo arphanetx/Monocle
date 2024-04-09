@@ -56,6 +56,21 @@ or
 ```
 monocle --binary <path-to-binary> --find <component-to-find>
 ```
+### Output
+As Monocle processes the functions present in the provided binary, it keeps a live tracker, scored by the highest score, of all analyzed functions, their score between 0 and 10 (where 0 means the function does not meet the search criteria and 10 means it does), alongside an explanation of why the score was awarded. Scores of 0 do not have their explanation provided.
+
+The format of this live display can be seen below:
+
+```
+                 Authentication Code
+┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━┓
+┃ BINARY NAME ┃ FUNCTION NAME ┃ SCORE ┃ EXPLANATION ┃
+┡━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━┩
+│ pure-authd  │ FUN_080480b4  │ 0     │             │
+└─────────────┴───────────────┴───────┴─────────────┘
+                       Monocle
+```
+
 ### Examples
 Below is an example of using Monocle on the ```pure-authd``` x86 binary [found here](https://github.com/polaco1782/linux-static-binaries/blob/master/x86-i686/pure-authd) to search for authentication code.
 
