@@ -2,7 +2,7 @@
     <img width=100% src="logo.png">
   </a>
 </p>
-<p align="center"> 🤖 Large Language Model For Binary Search ⚙️ </b> </p>
+<p align="center"> 🤖 Large Language Model For Binary Analysis Search ⚙️ </b> </p>
 
 <div align="center">
 
@@ -11,21 +11,36 @@
 ![GitHub watchers](https://img.shields.io/github/watchers/yourusername/Monocle?style=social)
 ![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/Monocle)
 <br>
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/P5P7C2MM6)
 
 </div>
 
-Monocle is a large language model designed specifically for binary search tasks. It utilizes state-of-the-art techniques in natural language processing (NLP) to assist in the analysis and search of binary files.
+Monocle is a large language model designed specifically for binary analysis search. Monocle can be provided with a binary and a search criteria (e.g. authentication code, vulnerable code, password strings, and more) and it will decompile the binary and use it's in-built LLM to identify and score areas of the code that meet the criteria. 
+* **🔬 Binary Search:** Without any prior knowledge Monocle will support in answering binary analysis questions related to the target.
+* **🤖 Plain text and open ended questions:** As Monocle is backed by an LLM, queries passed to it are written in plain text.
+* **🛠️ Ghidra Enabled:** Monocle uses Ghidra headless to enable decompilation of functions!
 
 # ⚙️ Setup
 
+## System Requirements
+Monocle uses the Mistral-7B-Instruct-v0.2 model, and where possible offloads processing to your systems GPU. It is reccomended to run Monocle on a machine with 32GB of RAM and a dedicated Nvidia GPU with atleast 4GB of memory. **However** it can run on lower spec machines, but will be significantly slower.
+
 ## Dependencies
 
-Monocle requires [Ghidra](https://ghidra-sre.org/) to be installed and accessible. Additionally, ensure that `analyzeHeadless` is available in your environment. For other dependencies, refer to the `requirements.txt` file:
+Monocle requires [Ghidra](https://ghidra-sre.org/) to be installed and accessible. Additionally, ensure that `analyzeHeadless` is available in your environment. 
+
+Python dependencies can be found in `requirements.txt` file:
 
 ```
 pip install -r requirements.txt
 ```
+
+Monocle can then be installed using the ```./setup.py``` script as below:
+
+```
+./setup.py install
+```
+
+**Optionally** If your machine supports it, you may want to install Nvidia Cuda of which will greatly increase the speed and optimisation of the used model. A [guide here](https://telin.ugent.be/telin-docs/windows/pytorch/) can be seen on how to setup Cuda.
 
 ## Running
 
@@ -37,6 +52,9 @@ Execute Monocle with the appropriate parameters to conduct binary search tasks.
 ```bash
 python3 monocle.py --binary <path-to-binary> --find <component-to-find>
 ```
+
+# Mistral-7B-Instruct-v0.2
+Behind the scenes Monocle uses the ```Mistral-7B-Instruct-v0.2``` model. The Mistral-7B-Instruct-v0.2 Large Language Model (LLM) is an instruct fine-tuned version of the Mistral-7B-v0.2. More can be found on the model [here!](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2).
 
 # 🙏 Contributions
 
