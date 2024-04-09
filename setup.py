@@ -4,19 +4,18 @@ setup(
     name='monocle',
     version='0.1',
     install_requires=[
-    'argparse'
-    'rich',
-    'argparse',
-    'setuptools',
-    'huggingface_hub',
-    'numpy',
-    'pyyaml',
-    'torchvision',                                                                        
-    'torchaudio',                                                                        
-    'bitsandbytes',
-    'accelerate',
-    'transformers',
-    'torch'
+        'argparse',
+        'rich',
+        'setuptools',
+        'huggingface_hub',
+        'numpy',
+        'pyyaml',
+        'torchvision',
+        'torchaudio',
+        'bitsandbytes',
+        'accelerate',
+        'transformers',
+        'torch'
     ],
     entry_points={
         'console_scripts': [
