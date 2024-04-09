@@ -1,0 +1,6 @@
+transformers
+torch
+argparse
+rich
+argparse
+setuptools
