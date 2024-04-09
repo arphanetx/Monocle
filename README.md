@@ -2,7 +2,7 @@
     <img width=100% src="logo.png">
   </a>
 </p>
-<p align="center"> 🤖 Large Language Model for Binary Analysis Search ⚙️ </p>
+<p align="center"> 🤖 Large Language Model for Binary Analysis Search 🧐 </p>
 
 <div align="center">
 
