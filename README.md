@@ -1,5 +1,5 @@
 <p align="center">
-    <img width=100% src="Logo.png">
+    <img width=100% src="logo.png">
   </a>
 </p>
 <p align="center"> 🤖 Large Language Model For Binary Search ⚙️ </b> </p>
