@@ -68,7 +68,12 @@ python.exe /Monocle/monocle.py --binary "..\linux-static-binaries-master\linux-s
 </p>
 
 # 🤖 Mistral-7B-Instruct-v0.2
-Behind the scenes Monocle uses the ```Mistral-7B-Instruct-v0.2``` model. The Mistral-7B-Instruct-v0.2 Large Language Model (LLM) is an instruct fine-tuned version of the Mistral-7B-v0.2. More can be found on the model [here!](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2).
+Behind the scenes Monocle uses the ```Mistral-7B-Instruct-v0.2``` model from The Mistral AI Team - see [here](https://arxiv.org/abs/2310.06825). The Mistral-7B-Instruct-v0.2 Large Language Model (LLM) is an instruct fine-tuned version of the Mistral-7B-v0.2. More can be found on the model [here!](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2).
+- 7.24B params
+- Tensor type: BF16
+- 32k context window (vs 8k context in v0.1)
+- Rope-theta = 1e6
+- No Sliding-Window Attention
 
 # 🙏 Contributions
 Monocle is an open-source project and welcomes contributions from the community. If you would like to contribute to
