@@ -16,7 +16,7 @@
 
 Monocle is tooling backed by an large language model for performing natural language searches against compiled target binaries. Monocle can be provided with a binary and a search criteria (e.g., authentication code, vulnerable code, password strings, and more), and it will decompile the binary and use its in-built LLM to identify and score areas of the code that meet the criteria. 
 * **🔬 Binary Search:** Without any prior knowledge, Monocle will support in answering binary analysis questions related to the target.
-* **🤖 Natural Language and Open-Ended Questions:** As Monocle is backed by an LLM, queries passed to it are written in plain text.
+* **🤖 Natural Language and Open-Ended Questions:** As Monocle is backed by an LLM queries passed to it are written in plain text.
 * **🛠️ Ghidra Enabled:** Monocle uses Ghidra headless to enable decompilation of compiled binaries!
 
 # ⚙️ Setup
