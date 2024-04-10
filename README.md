@@ -53,10 +53,11 @@ To utilize Monocle, follow the instructions below:
 ### Natural Language Search
 Execute Monocle with the appropriate parameters to conduct binary search tasks.
 
+**Windows**
 ```bash
-python3 monocle.py --binary <path-to-binary> --find <component-to-find>
+monocle.exe --binary <path-to-binary> --find <component-to-find>
 ```
-or
+**Unix**
 ```
 monocle --binary <path-to-binary> --find <component-to-find>
 ```
