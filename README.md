@@ -32,6 +32,7 @@ Monocle requires **Nvidia CUDA** which allows for greatly increased performance 
 Monocle requires [Ghidra](https://ghidra-sre.org/) to be installed and accessible. Additionally, ensure that `analyzeHeadless` is available in your environment. 
 
 Python dependencies can be found in the `requirements.txt` file:
+
 ```
 pip install -r requirements.txt
 ```
@@ -39,7 +40,8 @@ pip install -r requirements.txt
 Monocle can then be installed using the `./setup.py` script as below:
 
 ```
-python -m pip insatll .```
+python -m pip insatll .
+```
 
 ## Running
 
