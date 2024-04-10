@@ -46,7 +46,7 @@ Monocle can then be installed using the `./setup.py` script as below:
 
 To utilize Monocle, follow the instructions below:
 
-### Binary Search
+### Natural Language Search
 Execute Monocle with the appropriate parameters to conduct binary search tasks.
 
 ```bash
