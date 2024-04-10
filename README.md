@@ -27,7 +27,10 @@ Monocle uses the Mistral-7B-Instruct-v0.2 model, and where possible offloads pro
 **Monocle has been tested on Windows 11; however, it should be compatible with Unix and other systems.**
 
 ## Dependencies
-Monocle requires **Nvidia CUDA** which allows for greatly increased performance of the LLM. A [guide here](https://telin.ugent.be/telin-docs/windows/pytorch/) can be seen on how to set up CUDA.
+Monocle requires **Nvidia CUDA** which allows for greatly increased performance of the LLM. For this follow the below steps:
+- Ensure your Nvidia drivers are up to date: https://www.nvidia.com/en-us/geforce/drivers/
+- Install the appropriate dependancies from here: https://pytorch.org/get-started/locally/
+- Validate CUDA is installed correctly by running the following and being returned a prompt ```python -c "import torch; print(torch.rand(2,3).cuda())"```
 
 Monocle requires [Ghidra](https://ghidra-sre.org/) to be installed and accessible. Additionally, ensure that `analyzeHeadless` is available in your environment. 
 
