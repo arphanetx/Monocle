@@ -9,7 +9,7 @@ from rich.live import Live
 from rich.progress import Progress
 from rich.table import Table
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
-from GhidraBridge.ghidra_bridge import GhidraBridge
+from Monocle.GhidraBridge.ghidra_bridge import GhidraBridge
 
 class Monocle:
     def _load_model(self, model_name, device):
