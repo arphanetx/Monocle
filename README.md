@@ -43,7 +43,7 @@ pip install -r requirements.txt
 Monocle can then be installed using the `./setup.py` script as below:
 
 ```
-python -m pip insatll .
+python -m pip install .
 ```
 
 ## Running
